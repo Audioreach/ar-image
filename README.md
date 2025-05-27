@@ -29,3 +29,6 @@ where you cloned this project:
 ```
 docker build -t ar-image .
 ```
+
+## License
+ar-image is licensed under the [*BSD-3-clause-clear License*](https://spdx.org/licenses/BSD-3-Clause-Clear.html). See [*LICENSE*](https://github.com/Audioreach/ar-image/blob/main/LICENSE) for the full license text.
