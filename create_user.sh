@@ -4,7 +4,7 @@
 groupadd -g $GID $USER
 useradd -m -s /bin/bash -u $UID -g $GID $USER
 
-# Add jenkins to sudo group
+# Add the user to sudo group
 apt-get update
 apt-get -qq install sudo
 usermod -aG sudo $USER
