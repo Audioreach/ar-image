@@ -2,8 +2,8 @@ FROM ubuntu:22.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 ARG USER
-ARG UID
-ARG GID
+ARG USER_ID
+ARG GROUP_ID
 
 # Force apt "--no-install-recommends" to limit the image size
 RUN echo 'APT::Install-Recommends   "0";'   >> /etc/apt/apt.conf.d/99local && \
@@ -79,7 +79,6 @@ ENV LC_ALL=en_US.UTF-8
 ENV LANG=en_US.UTF-8
 ENV LANGUAGE=en_US.UTF-8
 
-USER $USER
+USER "$USER"
 
-WORKDIR /home/$USER
-
+WORKDIR "/home/$USER"
